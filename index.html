@@ -1,144 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Playful webcam</title>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen-16x10.css">
-	<link rel="stylesheet" href="styles/custom.css">
+  <title>Playful webcam</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen-16x10.css">
+  <link rel="stylesheet" href="styles/custom.css">
 </head>
 <body class="shower list">
 
-	<header class="caption">
-		<h1>Playful webcam</h1>
-		<p>
-			<a href="https://zmoki.github.io/">Zarema Khalilova</a>, <a href="https://uploadcare.com/">Uploadcare</a>
-		</p>
-	</header>
+<header class="caption">
+  <h1>Playful webcam</h1>
+  <p>
+    <a href="https://zmoki.github.io/">Zarema Khalilova</a>, <a href="https://uploadcare.com/">Uploadcare</a>
+  </p>
+</header>
 
-	<section class="slide black" id="cover">
-		<h2>Playful webcam</h2>
-		<p>Zarema Khalilova</p>
+<section class="slide black" id="cover">
+  <h2>Playful webcam</h2>
+  <p>Zarema Khalilova</p>
 
-		<style>
-			#cover h2 {
-				margin:170px 0 0;
-				color:#FFF;
-				text-align:center;
-				font-size:70px;
-				}
-			#cover p {
-				margin:10px 0 0;
-				text-align:center;
-				color:#FFF;
-				font-style:italic;
-				font-size:20px;
-				}
-				#cover p a {
-					color:#FFF;
-					}
-		</style>
-	</section>
+  <style>
+    #cover h2 {
+      margin: 170px 0 0;
+      color: #FFF;
+      text-align: center;
+      font-size: 70px;
+    }
 
-	<section class="slide black">
-		<!-- https://www.labnol.org/internet/embed-mute-youtube-video/29149/ -->
-		<div id="muteYouTubeVideoPlayer" class="place"></div>
+    #cover p {
+      margin: 10px 0 0;
+      text-align: center;
+      color: #FFF;
+      font-style: italic;
+      font-size: 20px;
+    }
 
-		<script async src="https://www.youtube.com/iframe_api"></script>
-		<script>
-			function onYouTubeIframeAPIReady() {
-				var player;
-				player = new YT.Player('muteYouTubeVideoPlayer', {
-					videoId: 'xjRr5oRbwpk', // YouTube Video ID
-					width: 960,               // Player width (in px)
-					height: 540,              // Player height (in px)
-					playerVars: {
-						autoplay: 1,        // Auto-play the video on load
-						controls: 0,        // Show pause/play buttons in player
-						showinfo: 0,        // Hide the video title
-						modestbranding: 1,  // Hide the Youtube Logo
-						loop: 1,            // Run the video in a loop
-						fs: 0,              // Hide the full screen button
-						cc_load_policy: 0, // Hide closed captions
-						iv_load_policy: 3,  // Hide the Video Annotations
-						autohide: 0         // Hide video controls when playing
-					},
-					events: {
-						onReady: function(e) {
-							e.target.mute();
-						}
-					}
-				});
-			}
+    #cover p a {
+      color: #FFF;
+    }
+  </style>
+</section>
 
-			// Written by @labnol
-		</script>
-	</section>
+<section class="slide black">
+  <!-- https://www.labnol.org/internet/embed-mute-youtube-video/29149/ -->
+  <div id="muteYouTubeVideoPlayer" class="place"></div>
 
-	<section class="slide">
-		<img src="https://pp.userapi.com/c637216/v637216518/27f4e/K1wwjF-BVpg.jpg" alt="SPB Frontend" class="place"
-			height="540">
-	</section>
+  <script async src="https://www.youtube.com/iframe_api"></script>
+  <script>
+    function onYouTubeIframeAPIReady() {
+      var player;
+      player = new YT.Player('muteYouTubeVideoPlayer', {
+        videoId: 'xjRr5oRbwpk', // YouTube Video ID
+        width: 960,               // Player width (in px)
+        height: 540,              // Player height (in px)
+        playerVars: {
+          autoplay: 1,        // Auto-play the video on load
+          controls: 0,        // Show pause/play buttons in player
+          showinfo: 0,        // Hide the video title
+          modestbranding: 1,  // Hide the Youtube Logo
+          loop: 1,            // Run the video in a loop
+          fs: 0,              // Hide the full screen button
+          cc_load_policy: 0, // Hide closed captions
+          iv_load_policy: 3,  // Hide the Video Annotations
+          autohide: 0         // Hide video controls when playing
+        },
+        events: {
+          onReady: function(e) {
+            e.target.mute();
+          }
+        }
+      });
+    }
 
-	<section class="slide">
-		<img src="https://ucarecdn.com/e0367a86-9787-44b1-bc94-878e18ae2928/uploadcare-logo.svg" alt="Uploadcare" class="place"
-			height="120">
-	</section>
+    // Written by @labnol
+  </script>
+</section>
 
-	<section class="slide">
-		<img src="https://ucarecdn.com/021e5297-c1c4-43d4-97fc-6de7dd97c856/"
-			 height="540" alt="Widget in action" class="place">
-	</section>
+<section class="slide">
+  <img src="https://pp.userapi.com/c637216/v637216518/27f4e/K1wwjF-BVpg.jpg" alt="SPB Frontend" class="place"
+       height="540">
+</section>
 
-	<section class="slide">
-		<p class="place">camera tab screenshot will be there</p>
-	</section>
+<section class="slide">
+  <img src="https://ucarecdn.com/e0367a86-9787-44b1-bc94-878e18ae2928/uploadcare-logo.svg" alt="Uploadcare" class="place"
+       height="120">
+</section>
 
-	<section class="slide">
-		<img src="https://ucarecdn.com/2cc28610-099b-4288-8be8-f0d081ed3cf1/-/crop/1870x460/113,612/"
-			 width="1000" alt="Browser support of getUserMedia from caniuse" class="place">
-	</section>
+<section class="slide">
+  <img src="https://ucarecdn.com/021e5297-c1c4-43d4-97fc-6de7dd97c856/"
+       height="540" alt="Widget in action" class="place">
+</section>
 
-	<section class="slide">
-		<p class="place" style="top: calc(50% - 70px);">
-			<img src="https://images.apple.com/v/safari/g/images/overview/safari_icon_large_2x.png"
-				 alt="Safari">
-		</p>
-		<p class="place" style="top: calc(50% + 70px);">
-			<a href="https://webkit.org/blog/7726/announcing-webrtc-and-media-capture/">
-				<b>will support</b> Media Capture and Stream API
-			</a>
-		</p>
-	</section>
+<section class="slide">
+  <p class="place">camera tab screenshot will be there</p>
+</section>
 
-	<section class="slide">
-		<p class="place" style="color: red;">
-			<img src="https://ucarecdn.com/b8a7e33c-191f-4553-bb6d-6e5594549f02/noun_332281_cc.svg"
-				 alt="webcam" height="200">
-			<img src="https://ucarecdn.com/4b1c5809-14ff-4b17-99a4-6938cdecece5/noun_332222_cc.svg"
-				 alt="mic" height="200">
-		</p>
-	</section>
+<section class="slide">
+  <img src="https://ucarecdn.com/2cc28610-099b-4288-8be8-f0d081ed3cf1/-/crop/1870x460/113,612/"
+       width="1000" alt="Browser support of getUserMedia from caniuse" class="place">
+</section>
 
-	<section class="slide">
-		<h2 class="place">Media&nbsp;Capture&nbsp;and&nbsp;Stream&nbsp;API</h2>
-	</section>
+<section class="slide">
+  <p class="place" style="top: calc(50% - 70px);">
+    <img src="https://images.apple.com/v/safari/g/images/overview/safari_icon_large_2x.png"
+         alt="Safari">
+  </p>
+  <p class="place" style="top: calc(50% + 70px);">
+    <a href="https://webkit.org/blog/7726/announcing-webrtc-and-media-capture/">
+      <b>will support</b> Media Capture and Stream API
+    </a>
+  </p>
+</section>
 
-	<section class="slide">
-		<h2>Get stream</h2>
-		<pre>
+<section class="slide">
+  <p class="place" style="color: red;">
+    <img src="https://ucarecdn.com/b8a7e33c-191f-4553-bb6d-6e5594549f02/noun_332281_cc.svg"
+         alt="webcam" height="200">
+    <img src="https://ucarecdn.com/4b1c5809-14ff-4b17-99a4-6938cdecece5/noun_332222_cc.svg"
+         alt="mic" height="200">
+  </p>
+</section>
+
+<section class="slide">
+  <h2 class="place">Media&nbsp;Capture&nbsp;and&nbsp;Stream&nbsp;API</h2>
+</section>
+
+<section class="slide">
+  <h2>Get stream</h2>
+  <pre>
 			<code>const constraints = {video: true, audio: true}</code>
 			<code> </code>
 			<code>navigator.mediaDevices.<mark>getUserMedia</mark>(constraints)</code>
 			<code>	.then(<mark>stream</mark> => {...})</code>
 			<code>	.catch(error => {...})</code>
 		</pre>
-	</section>
+</section>
 
-	<section class="slide">
-		<h2>Stream to video</h2>
-		<pre>
+<section class="slide">
+  <h2>Stream to video</h2>
+  <pre>
 			<code>stream => {</code>
 			<code>	const $video = document.querySelector('video')</code>
 			<code>	 </code>
@@ -146,71 +148,71 @@
 			<code>	$video<mark>.onloadedmetadata</mark> = () => $video<mark>.play()</mark></code>
 			<code>}</code>
 		</pre>
-	</section>
+</section>
 
-	<section class="slide" id="demo-stream">
-		<div class="demo-preview place">
-			<h2>Demo</h2>
-			<p>Choose this slide to see demo</p>
-		</div>
-		<video class="demo-video place" hidden height="540"></video>
-		<p class="demo-error place" hidden></p>
+<section class="slide" id="demo-stream">
+  <div class="demo-preview place">
+    <h2>Demo</h2>
+    <p>Choose this slide to see demo</p>
+  </div>
+  <video class="demo-video place" hidden height="540"></video>
+  <p class="demo-error place" hidden></p>
 
-		<script>
-			window.addEventListener('popstate', () => {
-				const demo = '#demo-stream'
+  <script>
+    window.addEventListener('popstate', () => {
+      const demo = '#demo-stream'
 
-				if (document.location.hash === demo) {
-					const $parent = document.querySelector(demo)
-					const $preview = $parent.querySelector('.demo-preview')
+      if (document.location.hash === demo) {
+        const $parent = document.querySelector(demo)
+        const $preview = $parent.querySelector('.demo-preview')
 
-					$preview.hidden = true
+        $preview.hidden = true
 
-					const constraints = {
-						video: {
-							height: 540
-						},
-						audio: false,
-					}
+        const constraints = {
+          video: {
+            height: 540
+          },
+          audio: false,
+        }
 
 
-					navigator.mediaDevices.getUserMedia(constraints)
-						.then(stream => {
-							const $video = $parent.querySelector('.demo-video')
+        navigator.mediaDevices.getUserMedia(constraints)
+          .then(stream => {
+            const $video = $parent.querySelector('.demo-video')
 
-							$video.srcObject = stream
-							$video.onloadedmetadata = () => {
-								$video.play()
+            $video.srcObject = stream
+            $video.onloadedmetadata = () => {
+              $video.play()
 
-								$video.hidden = false
+              $video.hidden = false
 
-								window.addEventListener('popstate', () => {
-									(stream.getVideoTracks()[0]).stop()
+              window.addEventListener('popstate', () => {
+                (stream.getVideoTracks()[0]).stop()
 
-									$video.hidden = true
-									$preview.hidden = false
-								})
-							}
-						})
-						.catch(error => {
-							const $el = $parent.querySelector('.demo-error')
+                $video.hidden = true
+                $preview.hidden = false
+              })
+            }
+          })
+          .catch(error => {
+            const $el = $parent.querySelector('.demo-error')
 
-							$el.innerText = error.message
-							$el.hidden = false
-						})
-				}
-			})
-		</script>
-	</section>
+            $el.innerText = error.message
+            $el.hidden = false
+          })
+      }
+    })
+  </script>
+</section>
 
-	<footer class="badge">
-		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
-	</footer>
+<footer class="badge">
+  <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+</footer>
 
-	<div class="progress"></div>
+<div class="progress"></div>
 
-	<script src="node_modules/shower-core/shower.min.js"></script>
-	<!-- Copyright © 2017 Yours Truly, Famous Inc. -->
+<script src="node_modules/shower-core/shower.min.js"></script>
+<!-- Copyright © 2017 Yours Truly, Famous Inc. -->
 
 </body>
 </html>
