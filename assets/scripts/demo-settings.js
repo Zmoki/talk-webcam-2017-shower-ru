@@ -56,7 +56,7 @@ window.addEventListener('popstate', () => {
             $notice.hidden = true
           }
           else {
-            $notice.innerHTML = `${streamVideoTrack.label} has no settings`
+            $notice.innerHTML = `${streamVideoTrack.label} has <b>no settings</b>`
             $notice.hidden = false
           }
 

@@ -250,10 +250,8 @@
   <video class="demo-video place" hidden></video>
   <p class="demo-error place" hidden></p>
   <mark class="demo-notice place" hidden></mark>
-  <div class="demo-controls place bottom">
-    <button type="button" class="demo-torch" hidden>Torch on/off</button>
-    <input type="range" class="demo-zoom" hidden>
-  </div>
+  <button type="button" class="demo-torch place top" hidden>Torch on/off</button>
+  <input type="range" class="demo-zoom place bottom" hidden>
 
   <script src="assets/scripts/demo-settings.js" async></script>
 
@@ -261,6 +259,7 @@
     .demo-notice {
       width: 80%;
       text-align: center;
+      opacity: 0.8;
     }
 
     .demo-controls {
@@ -270,9 +269,138 @@
     .demo-torch {
       font-size: 120%;
       padding: 20px;
+      margin-top: 40px;
+    }
+    .demo-zoom {
+      margin-bottom: 80px;
     }
   </style>
 </section>
+
+<section class="slide">
+  <h2>Stream to canvas</h2>
+  <pre>
+    <code>stream => {</code>
+    <code>	const $video = document.createElement('<mark>video</mark>')</code>
+    <code>	const $canvas = document.querySelector('<mark>canvas</mark>')</code>
+    <code>  </code>
+    <code>	$video.src = <mark>URL.createObjectURL(stream)</mark></code>
+    <code>	$video.play()</code>
+    <code>    ...</code>
+  </pre>
+</section>
+
+<section class="slide">
+  <h2>Stream to canvas</h2>
+  <pre>
+    <code>	const context = $<mark>canvas.getContext('2d')</mark></code>
+    <code>  </code>
+    <code>	function draw() {</code>
+    <code>	  requestAnimationFrame(draw)</code>
+    <code>	  context<mark>.drawImage</mark>(<mark>$video</mark>, 0, 0, width, height)</code>
+    <code>	}</code>
+    <code>  </code>
+    <code>	<mark>requestAnimationFrame(draw)</mark></code>
+  </pre>
+</section>
+
+<section class="slide" id="demo-canvas">
+  <div class="demo-preview place">
+    <h2>Demo</h2>
+    <p>Choose this slide to see demo</p>
+  </div>
+  <canvas class="demo-canvas place" hidden></canvas>
+  <p class="demo-error place" hidden></p>
+  <mark class="demo-notice place" hidden>Yep, it is <b>canvas</b></mark>
+
+  <script src="assets/scripts/demo-canvas.js" async></script>
+</section>
+
+<section class="slide">
+  <h2 class="shout shrink">Let's fun</h2>
+</section>
+
+<section class="slide">
+  <p>Filters Demo</p>
+</section>
+
+<section class="slide">
+  <p>Filters how to</p>
+</section>
+
+<section class="slide">
+  <p>ASCII Demo</p>
+</section>
+
+<section class="slide">
+  <p>ASCII how to</p>
+</section>
+
+<section class="slide">
+  <p>Mask Demo</p>
+</section>
+
+<section class="slide">
+  <p>Mask how to</p>
+</section>
+
+<section class="slide">
+  <h2 class="shout shrink">Record all</h2>
+</section>
+
+<section class="slide">
+  <p>Image demo</p>
+</section>
+
+<section class="slide">
+  <p>Image how to</p>
+</section>
+
+<section class="slide">
+  <p>Video record Demo</p>
+</section>
+
+<section class="slide">
+  <p>Video record how to</p>
+</section>
+
+<section class="slide">
+  <p>Canvas Demo</p>
+</section>
+
+<section class="slide">
+  <p>Canvas how to</p>
+</section>
+
+<section class="slide">
+  <h2 class="shout shrink">What next?</h2>
+</section>
+
+<section class="slide">
+  <h2>You can do</h2>
+
+  <ol>
+    <li>Conference with WebRTC</li>
+    <li class="next">PWA like native photo app</li>
+    <li class="next">VR/AR</li>
+  </ol>
+</section>
+
+<section class="slide" id="see-more">
+  <h2 class="shout">
+    <a href="https://github.com/shower/shower">See more on GitHub</a>
+  </h2>
+  <style>
+    #see-more h2 {
+      font-size:100px
+    }
+  </style>
+</section>
+
+<section class="slide">
+  <h2>Thank you!</h2>
+</section>
+
 
 <footer class="badge">
   <a href="https://github.com/shower/shower">Fork me on GitHub</a>

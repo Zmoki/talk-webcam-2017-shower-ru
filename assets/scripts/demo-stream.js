@@ -1,8 +1,8 @@
 window.addEventListener('popstate', () => {
-  const demo = '#demo-stream'
+  const demo = ['#demo-stream', '#demo-stream-filter']
 
-  if (document.location.hash === demo) {
-    const $parent = document.querySelector(demo)
+  if (!!~demo.indexOf(document.location.hash)) {
+    const $parent = document.querySelector(document.location.hash)
     const $preview = $parent.querySelector('.demo-preview')
 
     const constraints = {
