@@ -220,12 +220,25 @@
 
   <pre>
     <code><mark>if (capabilities.zoom)</mark> {</code>
-    <code>  const $zoom = document.querySelector('input[type=range]')</code>
-    <code>  const {min, max, step} = capabilities.zoom</code>
-    <code>  <span class="comment">// Set up input range</span></code>
+    <code>  const $zoom = document.querySelector('<mark>input[type=range]</mark>')</code>
+    <code>  </code>
+    <code>  $zoom.min = capabilities.zoom.min</code>
+    <code>  $zoom.max = capabilities.zoom.max</code>
+    <code>  $zoom.step = capabilities.zoom.step</code>
+    <code>  ...</code>
+  </pre>
+</section>
+
+<section class="slide">
+  <h2>Capabilities: zoom</h2>
+
+  <pre>
+    <code>  ...</code>
     <code>  $zoom.value = (videoTrack.getSettings()).zoom</code>
+    <code>  </code>
     <code>  $zoom.onchange = (e) => videoTrack.applyConstraints({</code>
     <code>    advanced: [{zoom: e.target.value}]</code>
+    <code>  })</code>
   </pre>
 </section>
 
