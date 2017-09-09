@@ -1,62 +1,52 @@
-# Shower Presentation Template [![Build Status](https://travis-ci.org/shower/shower.svg?branch=master)](https://travis-ci.org/shower/shower)
+# Playful webcam
 
-<img src="pictures/logo.png" width="250" alt="Shower logo">
+https://zmoki.github.io/talk-webcam-2017-shower/
 
-> Shower ['ʃəuə] noun. A person or thing that shows.
+## Description
 
-1. Built on HTML, CSS and vanilla JavaScript
-2. Works in all modern browsers
-3. Themes are separated from engine
-4. Modular and extensible
-5. Fully keyboard accessible
-6. Printable to PDF
+Take photos, record or stream video and audio: all these
+we can now be done with native browser capabilities and JS.
 
-[See it in action](http://shwr.me/). Includes [Ribbon](https://github.com/shower/ribbon/) and [Material](https://github.com/shower/material/) themes, and [core](https://github.com/shower/core/) with plugins.
+But, can we configure our camera the way we do it on smartphones?
+Zoom, maybe? Apply a mask like in Stories?
+Change the voice?
+Or, transform a video stream into ASCII?
 
-Follow [@shower_me](https://twitter.com/shower_me) for support and updates, [file an issue](https://github.com/shower/shower/issues/new) if you have any.
+I'll tell you how to work with the webcam in browsers:
+starting from scratch and apply the crazy stuff in the end.
 
-## Quick Start
+## About me
 
-1. Download and unzip [template archive](http://shwr.me/shower.zip)
-2. Open `index.html` and start creating your presentation
+* **Full name**: Zarema Khalilova
+* **Company**: Uploadcare
+* **Site of the company**: https://uploadcare.com/
+* **Logo of the company**: [png][uploadcare-png], [svg][uploadcare-svg]
+* **About company**: Uploadcare is an IaaS handling file infrastructure for the web and mobile apps
+* **Position**: Senior Frontend Developer
+* **Photo**: https://ucarecdn.com/332c902b-6da1-4dbf-b255-10efe824a849/-/crop/1050x1050/680,0/-/preview/500x500/-/quality/best/zarema-khalilova.jpg
 
-## Advanced
+[uploadcare-png]: https://ucarecdn.com/42d10221-1c2f-40b0-b348-b44eb02662bb/uploadcare-logo.png
+[uploadcare-svg]: https://ucarecdn.com/e0367a86-9787-44b1-bc94-878e18ae2928/uploadcare-logo.svg
 
-1. [Fork](https://github.com/shower/shower/fork) this repository
-2. Go to fork setting and rename it: `shower` → `my-slides`
-2. Clone it to your computer: `git clone git@github.com:username/my-slides.git`
-3. Go to `my-slides` folder and install dependencies: `npm install`
-4. Start creating your presentation
+<p>
+  <a href="https://ucarecdn.com/332c902b-6da1-4dbf-b255-10efe824a849/-/crop/1050x1050/680,0/-/preview/500x500/-/quality/best/zarema-khalilova.jpg">
+    <img src="https://ucarecdn.com/332c902b-6da1-4dbf-b255-10efe824a849/-/crop/1050x1050/680,0/-/preview/500x500/-/quality/best/zarema-khalilova.jpg"
+         alt="Zarema's portrait" width="500" />
+  </a>
+</p>
 
-Once you’re done you can build a clean copy of your slides:
+### My bio
 
-	npm run prepare
+I'm frontend developer at [Uploadcare][uploadcare],
+I work on a widget for uploading files
+used by thousands of companies around the globe.
 
-And you’ll find your presentation in `prepared` folder with only needed files in it. You can also run `npm run archive` to get the same files in `archive.zip`. But there’s more! You can easily publish your presentation online by running:
+I live in Saint-Petersburg, Russia, where I'm also a founder and
+co-organizer of the [SPB Frontend][spb-frontend] community.
 
-	npm run publish
+My path in web dev started
+when JS was only used to make snowfall on pages.
+I like how web technologies and JS have evolved since.
 
-And you’ll have your slides published on `http://username.github.io/my-slides/`.
-
-## Usage Examples
-
-- [Installable Web Apps](http://pepelsbey.net/pres/web-apps/)
-- [Clear and Sharp](http://pepelsbey.net/pres/clear-and-sharp/)
-- [CSS Management](http://pepelsbey.net/pres/knife-train/)
-- [Push it!](http://pepelsbey.net/pres/push-it/)
-- [Pre-fixes](http://pepelsbey.net/pres/pre-fixes/)
-- [Web In Curves](http://pepelsbey.net/pres/web-in-curves/)
-- [Sense Coding](http://pepelsbey.net/pres/sense-coding/)
-
-## Browser Support
-
-Latest stable versions of Chrome, Internet Explorer, Firefox, Opera and Safari are supported.
-
-## Contributing
-
-You’re always welcome to contribute. Fork project, make changes and send it as pull request. But it’s better to file an [issue](https://github.com/shower/shower/issues) with your idea first. Read [contributing rules](CONTRIBUTING.md) for more details.
-
-Main contributors in historical order: [pepelsbey](https://github.com/pepelsbey), [jahson](https://github.com/jahson), [miripiruni](https://github.com/miripiruni), [kizu](https://github.com/kizu), [artpolikarpov](https://github.com/artpolikarpov), [tonyganch](https://github.com/tonyganch), [zloylos](https://github.com/zloylos).
-
----
-Licensed under [MIT License](LICENSE.md).
+[uploadcare]: https://uploadcare.com/
+[spb-frontend]: http://spb-frontend.ru/
