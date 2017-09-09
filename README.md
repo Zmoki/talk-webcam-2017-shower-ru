@@ -2,6 +2,8 @@
 
 https://zmoki.github.io/talk-webcam-2017-shower/
 
+Awesome collection about Stream API: https://github.com/Zmoki/awesome-media-streams
+
 ## Description
 
 Take photos, record or stream video and audio: all these
