@@ -5,6 +5,7 @@ window.addEventListener('popstate', () => {
   if (!!~demo.indexOf(route)) {
     const $parent = document.querySelector(route)
     const $preview = $parent.querySelector('.demo-preview')
+    const $canvas = $parent.querySelector('.demo-canvas')
 
     const constraints = {
       video: true,
@@ -19,8 +20,6 @@ window.addEventListener('popstate', () => {
         $video.onloadedmetadata = () => {
           $video.play()
 
-          const $canvas = $parent.querySelector('.demo-canvas')
-
           $canvas.width = $video.videoWidth
           $canvas.height = $video.videoHeight
 
@@ -31,7 +30,7 @@ window.addEventListener('popstate', () => {
           if (route === '#demo-canvas-image') {
             img = new Image()
 
-            img.src = 'https://ucarecdn.com/f39dbbf9-e728-47c8-a1d4-81e21a070935/-/crop/250x300/center/'
+            img.src = '//ucarecdn.com/f39dbbf9-e728-47c8-a1d4-81e21a070935/-/crop/250x300/center/'
           }
 
           const draw = () => {
