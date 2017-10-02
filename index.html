@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Playful webcam</title>
+  <title>Играемся с вебкамерой: от старта потока до дополненной реальности</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,30 +11,36 @@
 <body class="shower list">
 
 <header class="caption">
-  <h1>Playful webcam</h1>
+  <h1>Играемся с вебкамерой:<br />от старта потока до дополненной реальности</h1>
   <p>
-    <a href="https://zmoki.github.io/">Zarema Khalilova</a>, <a href="https://uploadcare.com/">Uploadcare</a>
+    <a href="https://zmoki.github.io/">Зарема Халилова</a>, <a href="https://uploadcare.com/">Uploadcare</a>
   </p>
 </header>
 
 <section class="slide black" id="cover">
-  <h2>Playful webcam</h2>
-  <p>Zarema Khalilova</p>
+  <h2>Играемся с вебкамерой</h2>
+  <h3>от старта потока до дополненной реальности</h3>
+  <p>Зарема Халилова</p>
 
   <style>
     #cover h2 {
-      margin: 170px 0 0;
+      margin: 110px 0 0;
       color: #FFF;
-      text-align: center;
       font-size: 70px;
     }
 
-    #cover p {
+    #cover h3 {
       margin: 10px 0 0;
-      text-align: center;
+      color: #FFF;
+      font-size: 39px;
+    }
+
+    #cover p {
+      margin: 30px 0 0;
       color: #FFF;
       font-style: italic;
-      font-size: 20px;
+      font-size: 30px;
+      text-align: right;
     }
 
     #cover p a {
@@ -80,15 +86,12 @@
 </section>
 
 <section class="slide">
-  <p class="place" style="top: calc(50% - 70px);">
-    <img src="https://images.apple.com/v/safari/g/images/overview/safari_icon_large_2x.png"
-         alt="Safari">
-  </p>
-  <p class="place" style="top: calc(50% + 70px);">
-    <a href="https://webkit.org/blog/7726/announcing-webrtc-and-media-capture/">
-      <b>will support</b> Media Capture and Stream API
-    </a>
-  </p>
+  <h2 class="place">
+    Safari 11 <span style="color: #39b54a;">✔</span>
+  </h2>
+  <div class="place bottom right" style="right: 80px;">
+    <img src="https://ucarecdn.com/d76feeaf-5f36-4e04-a1bc-05e74892e2cb/-/resize/x600/" alt="" height="300">
+  </div>
 </section>
 
 <section class="slide">
@@ -105,11 +108,11 @@
 </section>
 
 <section class="slide">
-  <h2 class="shout">Stream</h2>
+  <h2 class="shout">Поток</h2>
 </section>
 
 <section class="slide">
-  <h2>Get stream</h2>
+  <h2>Получаем поток с устройства</h2>
   <pre>
 			<code>const constraints = {video: true, audio: true}</code>
 			<code> </code>
@@ -120,7 +123,7 @@
 </section>
 
 <section class="slide">
-  <h2>Stream to video element</h2>
+  <h2>Транслируем в video элемент</h2>
   <pre>
 			<code>stream => {</code>
 			<code class="mark">	const $video = document.querySelector('video')</code>
@@ -133,8 +136,8 @@
 
 <section class="slide" id="demo-stream">
   <div class="demo-preview place">
-    <h2>Demo: Stream to video element</h2>
-    <p>Choose this slide to see demo</p>
+    <h2>Демо: Поток в video элемент</h2>
+    <p>Выберите этот слайд, чтобы увидеть демо</p>
   </div>
   <video class="demo-video place" hidden></video>
   <p class="demo-error place" hidden></p>
@@ -143,7 +146,7 @@
 </section>
 
 <section class="slide">
-  <h2>Stream to canvas</h2>
+  <h2>Поток в canvas</h2>
   <pre>
     <code>stream => {</code>
     <code class="mark">  const $video = document.createElement('video')</code>
@@ -156,7 +159,7 @@
 </section>
 
 <section class="slide">
-  <h2>Stream to canvas</h2>
+  <h2>Поток в canvas</h2>
   <pre>
     <code class="comment">    ...</code>
     <code class="mark">    const $canvas = document.querySelector('canvas')</code>
@@ -168,7 +171,7 @@
 </section>
 
 <section class="slide">
-  <h2>Stream to canvas</h2>
+  <h2>Поток в canvas</h2>
   <pre>
     <code class="comment">    ...</code>
     <code>    const context = $<mark>canvas.getContext('2d')</mark></code>
@@ -182,7 +185,7 @@
 </section>
 
 <section class="slide">
-  <h2>Stream to canvas</h2>
+  <h2>Поток в canvas</h2>
   <pre>
     <code class="comment">    ...</code>
     <code>    <mark>requestAnimationFrame(draw)</mark></code>
@@ -193,8 +196,8 @@
 
 <section class="slide" id="demo-canvas">
   <div class="demo-preview place">
-    <h2>Demo: Stream to canvas</h2>
-    <p>Choose this slide to see demo</p>
+    <h2>Демо: Поток в canvas</h2>
+    <p>Выберите этот слайд, чтобы увидеть демо</p>
   </div>
   <canvas class="demo-canvas place" hidden></canvas>
   <p class="demo-error place" hidden></p>
@@ -204,8 +207,8 @@
 
 <section class="slide" id="demo-canvas-text">
   <div class="demo-preview place">
-    <h2>Demo: Stream to canvas</h2>
-    <p>Choose this slide to see demo</p>
+    <h2>Демо: Поток в canvas</h2>
+    <p>Выберите этот слайд, чтобы увидеть демо</p>
   </div>
   <canvas class="demo-canvas place" hidden></canvas>
   <p class="demo-error place" hidden></p>
@@ -214,31 +217,31 @@
 
 <section class="slide" id="demo-canvas-image">
   <div class="demo-preview place">
-    <h2>Demo: Stream to canvas</h2>
-    <p>Choose this slide to see demo</p>
+    <h2>Демо: Поток в canvas</h2>
+    <p>Выберите этот слайд, чтобы увидеть демо</p>
   </div>
   <canvas class="demo-canvas place" hidden></canvas>
   <p class="demo-error place" hidden></p>
 </section>
 
 <section class="slide">
-  <h2>Stream to canvas</h2>
-  <h3>Performance problems:</h3>
+  <h2>Поток в canvas</h2>
+  <h3>Проблемы с производительностью</h3>
 
   <ol>
-    <li>frequency of <code>drawImage</code> calls is higher than the frame rate of the video</li>
-    <li class="next">the more pixels, the more resource-intensive it gets</li>
+    <li>частота вызовов <code>drawImage</code> выше, чем frame rate у видео</li>
+    <li class="next">чем больше размер в пикселях, тем больше съедается ресурсов</li>
   </ol>
 </section>
 
 <section class="slide black canvas-perf black">
-  <h2 class="place bottom">1280px&nbsp;video&nbsp;to&nbsp;canvas</h2>
+  <h2 class="place bottom">1280px</h2>
   <img class="cover" src="https://ucarecdn.com/73181fce-18e6-40bb-98da-a9df8460df83/-/crop/2100x1313/0,50/-/resize/1024x/" alt="">
 </section>
 
 <section class="slide">
-  <h2>Stream to canvas</h2>
-  <h3>Solution of performance problems:</h3>
+  <h2>Поток в canvas</h2>
+  <h3>Решение проблемы №1</h3>
 
   <pre>
     <code>let frameDrawed = true</code>
@@ -251,8 +254,8 @@
 </section>
 
 <section class="slide">
-  <h2>Stream to canvas</h2>
-  <h3>Solution of performance problems:</h3>
+  <h2>Поток в canvas</h2>
+  <h3>Решение проблемы №1</h3>
 
   <pre>
     <code>const streamTrack = stream.getVideoTracks()[0]</code>
@@ -264,8 +267,8 @@
 </section>
 
 <section class="slide">
-  <h2>Stream to canvas</h2>
-  <h3>Solution of performance problems:</h3>
+  <h2>Поток в canvas</h2>
+  <h3>Решение проблемы №1</h3>
 
   <pre>
     <code>const draw = () => {</code>
@@ -277,17 +280,17 @@
 </section>
 
 <section class="slide black canvas-perf">
-  <h2 class="place bottom">1280px&nbsp;video&nbsp;to&nbsp;canvas</h2>
+  <h2 class="place bottom">1280px</h2>
   <h3 class="place">requestAnimationFrame <span class="heart">❤</span> setInterval</h3>
   <img class="cover" src="https://ucarecdn.com/db2eb183-8038-445e-a411-f4c1ea2195a4/-/crop/2100x1313/0,50/-/resize/1024x/" alt="">
 </section>
 
 <section class="slide">
-  <h2>Constraints</h2>
+  <h2>Ограничения</h2>
 </section>
 
 <section class="slide">
-  <h2>Constraints</h2>
+  <h2>Ограничения</h2>
 
   <pre>
     <code><mark>const constraints = {video: true, audio: true}</mark></code>
@@ -299,7 +302,7 @@
 </section>
 
 <section class="slide">
-  <h2>Supported constraints</h2>
+  <h2>Поддерживаемые браузером ограничения</h2>
 
   <pre>
     <code>const supportedConstraints =</code>
@@ -308,7 +311,7 @@
 </section>
 
 <section class="slide" id="demo-supported-constraints">
-  <h2>Demo: Supported constraints</h2>
+  <h2>Демо: Поддерживаемые браузером ограничения</h2>
   <ul class="demo-output double"></ul>
 
   <style>
@@ -321,7 +324,7 @@
 </section>
 
 <section class="slide">
-  <h2>Video constraints</h2>
+  <h2>Ограничения видео</h2>
 
   <pre>
     <code>const constraints = {</code>
@@ -337,8 +340,8 @@
 
 <section class="slide" id="demo-constraints">
   <div class="demo-preview place">
-    <h2>Demo: Video constraints</h2>
-    <p>Choose this slide to see demo</p>
+    <h2>Демо: Ограничения видео</h2>
+    <p>Выберите этот слайд, чтобы увидеть демо</p>
   </div>
   <video class="demo-video place" hidden></video>
   <p class="demo-error place" hidden></p>
@@ -347,11 +350,11 @@
 </section>
 
 <section class="slide">
-  <h2>Capabilities</h2>
+  <h2>Возможности устройства</h2>
 </section>
 
 <section class="slide">
-  <h2>Capabilities</h2>
+  <h2>Возможности устройства</h2>
 
   <pre>
     <code>const videoTrack = stream<mark>.getVideoTracks()[0]</mark></code>
@@ -364,7 +367,7 @@
 </section>
 
 <section class="slide">
-  <h2>Capabilities: torch</h2>
+  <h2>Возможности: фонарик</h2>
 
   <pre>
     <code><mark>if (capabilities.torch)</mark> {</code>
@@ -378,7 +381,7 @@
 </section>
 
 <section class="slide">
-  <h2>Capabilities: zoom</h2>
+  <h2>Возможности: зум</h2>
 
   <pre>
     <code><mark>if (capabilities.zoom)</mark> {</code>
@@ -392,7 +395,7 @@
 </section>
 
 <section class="slide">
-  <h2>Capabilities: zoom</h2>
+  <h2>Возможности: зум</h2>
 
   <pre>
     <code class="comment">  ...</code>
@@ -406,13 +409,13 @@
 
 <section class="slide" id="demo-settings">
   <div class="demo-preview place">
-    <h2>Demo: Capabilities</h2>
-    <p>Choose this slide to see demo</p>
+    <h2>Демо: Возможности</h2>
+    <p>Выберите этот слайд, чтобы увидеть демо</p>
   </div>
   <video class="demo-video place" hidden></video>
   <p class="demo-error place" hidden></p>
   <mark class="demo-notice place" hidden></mark>
-  <button type="button" class="demo-torch place top" hidden>Torch on/off</button>
+  <button type="button" class="demo-torch place top" hidden>Фонарик вкл/выкл</button>
   <input type="range" class="demo-zoom place bottom" hidden>
 
   <script src="assets/scripts/demo-settings.js" async></script>
@@ -440,11 +443,11 @@
 </section>
 
 <section class="slide">
-  <h2 class="shout">Take photo</h2>
+  <h2 class="shout">Фото</h2>
 </section>
 
 <section class="slide">
-  <h2>Tip: save blob to image</h2>
+  <h2>Совет: картинка из blob</h2>
 
   <pre>
     <code>const blobToImage = blob => {</code>
@@ -459,27 +462,27 @@
 </section>
 
 <section class="slide">
-  <h2>Take photo</h2>
+  <h2>Делаем фото</h2>
   <div class="place">
-    <h2>Way #1: <code>canvas</code>&nbsp;&&nbsp;<code>drawImage</code></h2>
-    <p>Grab <b>video</b> frame</p>
+    <h2>Способ №1: <code>canvas</code>&nbsp;и&nbsp;<code>drawImage</code></h2>
+    <p>Сохраняет текущий видео-фрейм</p>
   </div>
 </section>
 
 <section class="slide">
-  <h2>Take photo: <code>drawImage</code></h2>
+  <h2>Делаем фото: <code>drawImage</code></h2>
 
   <pre>
     <code>stream => {</code>
-    <code class="comment">  ... <span class="comment">// Get video element and put stream to that</span></code>
-    <code class="comment">  ... <span class="comment">// Create canvas and context</span></code>
+    <code class="comment">  ... <span class="comment">// Поток в video элемент</span></code>
+    <code class="comment">  ... <span class="comment">// Создаем canvas и context</span></code>
     <code>  context.<mark>drawImage</mark>($video, 0, 0)</code>
     <code class="comment">  ...</code>
   </pre>
 </section>
 
 <section class="slide">
-  <h2>Take photo: <code>drawImage</code></h2>
+  <h2>Делаем фото: <code>drawImage</code></h2>
 
   <pre>
     <code class="comment">  ...</code>
@@ -489,15 +492,15 @@
 </section>
 
 <section class="slide">
-  <h2>Take photo</h2>
+  <h2>Делаем фото</h2>
   <div class="place">
-    <h2>Way #2: <code>ImageCapture</code>&nbsp;&&nbsp;<code>grabFrame</code></h2>
-    <p>Grab <b>stream</b> frame</p>
+    <h2>Способ №2: <code>ImageCapture</code>&nbsp;и&nbsp;<code>grabFrame</code></h2>
+    <p>Сохраняет текущий фрейм <b>с потока</b></p>
   </div>
 </section>
 
 <section class="slide">
-  <h2>Take photo: <code>grabFrame</code></h2>
+  <h2>Делаем фото: <code>grabFrame</code></h2>
 
   <pre>
     <code>stream => {</code>
@@ -508,13 +511,13 @@
 </section>
 
 <section class="slide">
-  <h2>Take photo: <code>grabFrame</code></h2>
+  <h2>Делаем фото: <code>grabFrame</code></h2>
 
   <pre>
     <code class="comment">  ...</code>
     <code>  imageCapture.<mark>grabFrame</mark>()</code>
     <code>    .then(imageBitmap => {</code>
-    <code class="comment">      ... <span class="comment">// Create canvas and context</span></code>
+    <code class="comment">      ... <span class="comment">// Создаем canvas и context</span></code>
     <code>      context.drawImage(imageBitmap, 0, 0)</code>
     <code>      $canvas.toBlob(blob => blobToImage(blob))</code>
     <code>    }</code>
@@ -523,15 +526,15 @@
 </section>
 
 <section class="slide">
-  <h2>Take photo</h2>
+  <h2>Делаем фото</h2>
   <div class="place">
-    <h2>Way #3: <code>ImageCapture</code>&nbsp;&&nbsp;<code>takePhoto</code></h2>
-    <p>Get full resolution photo from <b>stream</b></p>
+    <h2>Способ №3: <code>ImageCapture</code>&nbsp;и&nbsp;<code>takePhoto</code></h2>
+    <p>Сохраняет с потока фрейм максимального разрешения</p>
   </div>
 </section>
 
 <section class="slide">
-  <h2>Take photo: <code>takePhoto</code></h2>
+  <h2>Делаем фото: <code>takePhoto</code></h2>
 
   <pre>
     <code class="comment">  ...</code>
@@ -543,8 +546,8 @@
 
 <section class="slide" id="demo-photos">
   <div class="demo-preview place">
-    <h2>Demo: Take photo</h2>
-    <p>Choose this slide to see demo</p>
+    <h2>Демо: Делаем фото</h2>
+    <p>Выберите этот слайд, чтобы увидеть демо</p>
   </div>
   <div class="demo-output place">
     <video class="demo-video" hidden></video>
@@ -579,17 +582,17 @@
 </section>
 
 <section class="slide">
-  <h2 class="shout">Record</h2>
+  <h2 class="shout">Запись</h2>
 </section>
 
 <section class="slide" id="demo-record">
   <div class="demo-preview place">
-    <h2>Demo: Record stream</h2>
-    <p>Choose this slide to see demo</p>
+    <h2>Демо: Запись видео</h2>
+    <p>Выберите этот слайд, чтобы увидеть демо</p>
   </div>
   <div class="demo-controls place top" hidden>
-    <button class="demo-control demo-control_start" type="button">Start record</button>
-    <button class="demo-control demo-control_stop" type="button" hidden>Stop record</button>
+    <button class="demo-control demo-control_start" type="button">Старт</button>
+    <button class="demo-control demo-control_stop" type="button" hidden>Стоп</button>
   </div>
   <video class="demo-video place" hidden></video>
   <div class="place demo-output"></div>
@@ -599,11 +602,11 @@
 </section>
 
 <section class="slide">
-  <h2>Record stream</h2>
+  <h2>Запись видео</h2>
 
   <pre>
     <code>stream => {</code>
-    <code class="comment">  ... <span class="comment">// Create video and put stream to video</span></code>
+    <code class="comment">  ... <span class="comment">// Поток в video элемент</span></code>
     <code>  let <mark>chunks = []</mark></code>
     <code>  const mediaRecorder = new <mark>MediaRecorder</mark>(stream)</code>
     <code class="comment">  ...</code>
@@ -611,7 +614,7 @@
 </section>
 
 <section class="slide">
-  <h2>Record stream</h2>
+  <h2>Запись видео</h2>
 
   <pre>
     <code class="comment">  ...</code>
@@ -622,7 +625,7 @@
 </section>
 
 <section class="slide">
-  <h2>Record stream</h2>
+  <h2>Запись видео</h2>
 
   <pre>
     <code class="comment">  ...</code>
@@ -639,20 +642,20 @@
 </section>
 
 <section class="slide">
-  <h2>Filters</h2>
+  <h2>Фильтры</h2>
 </section>
 
 <section class="slide" id="demo-filters">
   <div class="demo-preview place">
-    <h2>Demo: Filters</h2>
-    <p>Choose this slide to see demo</p>
+    <h2>Демо: Фильтры</h2>
+    <p>Выберите этот слайд, чтобы увидеть демо</p>
   </div>
   <div class="demo-controls place top" hidden>
-    <button type="button" class="demo-control" data-filter="original">Original</button>
+    <button type="button" class="demo-control" data-filter="original">Оригинал</button>
     <button type="button" class="demo-control" data-filter="grayscale">Grayscale</button>
     <button type="button" class="demo-control" data-filter="invert">Invert</button>
     <button type="button" class="demo-control" data-filter="Toaster">Instagram: Toaster</button>
-    <button type="button" class="demo-take-photo">Take photo</button>
+    <button type="button" class="demo-take-photo">Сделать фото</button>
   </div>
   <video class="demo-video place" data-filter="original" hidden></video>
   <div class="demo-output place"></div>
@@ -676,9 +679,9 @@
 </section>
 
 <section class="slide">
-  <h2>Filters</h2>
+  <h2>Фильтры</h2>
 
-  <p>Just use <b>CSS Filters</b> for video</p>
+  <p>Используйте <b>CSS Filters</b> для video элемента</p>
 
   <pre>
     <code>video[data-filter=grayscale] {</code>
@@ -688,9 +691,9 @@
 </section>
 
 <section class="slide">
-  <h2>Filters</h2>
+  <h2>Фильтры</h2>
 
-  <p>To take photo with filter use <code>drawImage</code> way with tip:</p>
+  <h3>Совет: как сохранить фото с фильтром</h3>
 
   <pre>
     <code>context.filter = window</code>
@@ -702,7 +705,7 @@
 </section>
 
 <section class="slide">
-  <h2>ASCII Video Stream</h2>
+  <h2>ASCII</h2>
 </section>
 
 <section class="slide" id="demo-ascii">
@@ -713,13 +716,13 @@
 </section>
 
 <section class="slide">
-  <h2>Face mask</h2>
+  <h2>Маска</h2>
 </section>
 
 <section class="slide" id="demo-mask">
   <div class="demo-preview place">
-    <h2>Demo: Face mask</h2>
-    <p>Choose this slide to see demo</p>
+    <h2>Демо: Маска</h2>
+    <p>Выберите этот слайд, чтобы увидеть демо</p>
   </div>
   <video class="demo-video place" width="640" height="480" preload autoplay loop muted hidden></video>
   <canvas class="demo-canvas place" width="640" height="480" hidden></canvas>
@@ -731,7 +734,7 @@
 </section>
 
 <section class="slide">
-  <h2>Face mask</h2>
+  <h2>Маска</h2>
 
   <ul>
     <li>
@@ -746,7 +749,7 @@
 </section>
 
 <section class="slide">
-  <h2>Augmented reality</h2>
+  <h2>Дополненная реальность</h2>
 </section>
 
 <section class="slide" id="demo-ar">
@@ -757,7 +760,7 @@
 </section>
 
 <section class="slide">
-  <h2>Augmented reality</h2>
+  <h2>Дополненная реальность</h2>
 
   <pre>
     <code>&lt;script src=".../aframe.min.js"&gt;&lt;/script&gt;</code>
@@ -766,7 +769,7 @@
 </section>
 
 <section class="slide">
-  <h2>Augmented reality</h2>
+  <h2>Дополненная реальность</h2>
 
   <pre>
     <code>&lt;body style='margin : 0px; overflow: hidden;'&gt;</code>
@@ -779,22 +782,22 @@
 </section>
 
 <section class="slide">
-  <h2 class="shout shrink">What's next?</h2>
+  <h2 class="shout shrink">Что ещё?</h2>
 </section>
 
 <section class="slide">
-  <h2>You can do</h2>
+  <h2>Можно сделать</h2>
 
   <ol>
-    <li>Conference with WebRTC</li>
-    <li class="next">PWA like native photo app</li>
+    <li>видео-конференции с помощью WebRTC</li>
+    <li class="next">PWA приложение типа перископа</li>
     <li class="next">VR/AR</li>
   </ol>
 </section>
 
 <section class="slide" id="see-more">
   <h2 class="shout">
-    <a href="https://github.com/Zmoki/awesome-media-streams/">See more on GitHub</a>
+    <a href="https://github.com/Zmoki/awesome-media-streams/">Коллекция ссылок</a>
   </h2>
   <style>
     #see-more h2 {
@@ -804,7 +807,7 @@
 </section>
 
 <section class="slide">
-  <h2>Thank you!</h2>
+  <h2>Спасибо!</h2>
 
   <div class="place">
     <h2>
@@ -819,7 +822,7 @@
 
 
 <footer class="badge">
-  <a href="https://github.com/Zmoki/talk-webcam-2017-shower">See me on GitHub</a>
+  <a href="https://github.com/Zmoki/talk-webcam-2017-shower">Слайды на Гитхабе</a>
 </footer>
 
 <div class="progress"></div>
